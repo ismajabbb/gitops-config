@@ -1,0 +1,4 @@
+﻿resources:
+  - rollout.yaml
+  - service.yaml
+

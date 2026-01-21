@@ -1,0 +1,7 @@
+﻿namespace: myapp-qa
+resources:
+  - ../../base
+images:
+  - name: ghcr.io/ismajabbb/app-source/myapp
+    newTag: qa-latest
+

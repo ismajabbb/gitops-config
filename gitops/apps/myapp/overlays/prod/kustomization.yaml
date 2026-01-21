@@ -1,0 +1,7 @@
+﻿namespace: myapp-prod
+resources:
+  - ../../base
+images:
+  - name: ghcr.io/ismajabbb/app-source/myapp
+    newTag: prod-latest
+
