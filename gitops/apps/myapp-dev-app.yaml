@@ -3,6 +3,11 @@ kind: Application
 metadata:
   name: myapp-dev
   namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: myapp=ghcr.io/ismajabbb/app-source-cleannn/myapp
+    argocd-image-updater.argoproj.io/myapp.update-strategy: newest-build
+    argocd-image-updater.argoproj.io/myapp.allow-tags: regexp:^dev-[0-9a-f]{7,40}$
+    argocd-image-updater.argoproj.io/write-back-method: git:gitops-write-creds
 spec:
   project: default
   source:
@@ -16,4 +21,5 @@ spec:
     automated:
       prune: true
       selfHeal: true
+
 
