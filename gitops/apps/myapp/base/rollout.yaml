@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: ghcr.io/ismajabbb/app-source/myapp:dev-latest
+          image: -latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -32,4 +33,6 @@ spec:
         - setWeight: 50
         - pause: { duration: 60s }
         - setWeight: 100
+
+
 

@@ -2,6 +2,7 @@
 resources:
   - ../../base
 images:
-  - name: ghcr.io/ismajabbb/app-source/myapp
+  - name: ghcr.io/ismajabbb/app-source-cleannn/myapp
     newTag: dev-latest
+
 
